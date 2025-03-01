@@ -1,4 +1,4 @@
-import 'package:marketi/features/onBoarding/data/model/onBoarding_model.dart';
+import 'package:marketi/features/onBoarding/data/model/onboarding_model.dart';
 
 List<OnBoardingModel> onBoardingList = [
   OnBoardingModel(
