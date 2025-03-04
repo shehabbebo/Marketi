@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key, required this.appRouter});
   final AppRouter appRouter;
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -33,7 +32,7 @@ class MyApp extends StatelessWidget {
               useMaterial3: true,
             ),
             onGenerateRoute: appRouter.generateRouter,
-            initialRoute: Routes.Splash,
+            initialRoute: Routes.login,
             debugShowCheckedModeBanner: false,
           ),
         ));

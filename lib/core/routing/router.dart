@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:marketi/core/constant/string.dart';
+import 'package:marketi/features/auth/login/view/screen/login_screen.dart';
 import 'package:marketi/features/onBoarding/view/onBoarding.dart';
 import 'package:marketi/features/onBoarding/view/splash.dart';
 
@@ -12,6 +13,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => Splash());
       case Routes.onBoarding:
         return MaterialPageRoute(builder: (_) => OnBoarding());
+      case Routes.login:
+        return MaterialPageRoute(builder: (_) => LoginScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(
