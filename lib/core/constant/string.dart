@@ -10,4 +10,7 @@ class Routes {
   static const Forgetpassword = '/forgetpassword';
   static const ForgetpasswordEmail = '/forgetpasswordemail';
   static const Congratulation = '/Congratulation';
+  static const VerificationCodePage = '/VerificationCodePage';
+  static const VerificationCodeE = '/VerificationCodeE';
+  static const Resetpassword = '/Resetpassword';
 }

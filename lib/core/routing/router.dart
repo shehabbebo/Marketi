@@ -6,6 +6,9 @@ import 'package:marketi/features/auth/signup/view/screen/sign_up_screen.dart';
 import 'package:marketi/features/forgotPassword/congratulation.dart';
 import 'package:marketi/features/forgotPassword/forgetpassword.dart';
 import 'package:marketi/features/forgotPassword/forgetpasswordemail.dart';
+import 'package:marketi/features/forgotPassword/resetpassword.dart';
+import 'package:marketi/features/forgotPassword/verefycodeE.dart';
+import 'package:marketi/features/forgotPassword/verefycodeM.dart';
 import 'package:marketi/features/onBoarding/view/onBoarding.dart';
 import 'package:marketi/features/onBoarding/view/splash.dart';
 
@@ -27,6 +30,12 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => ForgetpasswordEmail());
       case Routes.Congratulation:
         return MaterialPageRoute(builder: (_) => Congratulation());
+      case Routes.VerificationCodePage:
+        return MaterialPageRoute(builder: (_) => VerificationCodePage());
+      case Routes.VerificationCodeE:
+        return MaterialPageRoute(builder: (_) => VerificationCodeE());
+      case Routes.Resetpassword:
+        return MaterialPageRoute(builder: (_) => Resetpassword());
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

@@ -35,6 +35,7 @@ dependencies:
   flutter_bloc: ^9.0.0
   flutter_screenutil: ^5.9.3
   font_awesome_flutter: ^10.8.0
+  pinput: ^5.0.1
 
 dev_dependencies:
   flutter_lints: ^5.0.0

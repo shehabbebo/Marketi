@@ -39,13 +39,22 @@ class _CongratulationState extends State<Congratulation> {
             ),
             SizedBox(height: 12.h),
             Center(
+              child: Text('Congratulations',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: AppColor.darkBlue,
+                    fontSize: 24.sp,
+                    fontWeight: FontWeight.w600,
+                  )),
+            ),
+            Center(
               child: Text(
                   'You have updated the password. please \nlogin again with your latest password',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: AppColor.darkBlue,
                     fontSize: 12.sp,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.normal,
                   )),
             ),
             SizedBox(height: 24.h),
