@@ -3,14 +3,17 @@ import 'package:flutter/widgets.dart';
 import 'package:marketi/core/constant/string.dart';
 import 'package:marketi/features/auth/login/view/screen/login_screen.dart';
 import 'package:marketi/features/auth/signup/view/screen/sign_up_screen.dart';
-import 'package:marketi/features/forgotPassword/congratulation.dart';
-import 'package:marketi/features/forgotPassword/forgetpassword.dart';
-import 'package:marketi/features/forgotPassword/forgetpasswordemail.dart';
-import 'package:marketi/features/forgotPassword/resetpassword.dart';
-import 'package:marketi/features/forgotPassword/verefycodeE.dart';
-import 'package:marketi/features/forgotPassword/verefycodeM.dart';
 import 'package:marketi/features/onBoarding/view/onBoarding.dart';
 import 'package:marketi/features/onBoarding/view/splash.dart';
+import 'package:marketi/features/screen_task/cart.dart';
+import 'package:marketi/features/screen_task/checkout.dart';
+import 'package:marketi/features/screen_task/congratulation.dart';
+import 'package:marketi/features/screen_task/forgetpassword.dart';
+import 'package:marketi/features/screen_task/forgetpasswordemail.dart';
+import 'package:marketi/features/screen_task/oopsnotfound.dart';
+import 'package:marketi/features/screen_task/resetpassword.dart';
+import 'package:marketi/features/screen_task/verefycodeE.dart';
+import 'package:marketi/features/screen_task/verefycodeM.dart';
 
 class AppRouter {
   Route generateRouter(RouteSettings settings) {
@@ -36,6 +39,13 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => VerificationCodeE());
       case Routes.Resetpassword:
         return MaterialPageRoute(builder: (_) => Resetpassword());
+      case Routes.CartScreen:
+        return MaterialPageRoute(builder: (_) => CartScreen());
+      case Routes.Checkout:
+        return MaterialPageRoute(builder: (_) => Checkout());
+      case Routes.Oopsnotfound:
+        return MaterialPageRoute(builder: (_) => Oopsnotfound());
+
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

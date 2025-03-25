@@ -1,6 +1,5 @@
-import 'package:marketi/features/forgotPassword/forgetpassword.dart';
-import 'package:marketi/features/forgotPassword/forgetpasswordemail.dart';
 import 'package:marketi/features/onBoarding/view/splash.dart';
+import 'package:marketi/features/screen_task/oopsnotfound.dart';
 
 class Routes {
   static const Splash = '/splash';
@@ -13,4 +12,7 @@ class Routes {
   static const VerificationCodePage = '/VerificationCodePage';
   static const VerificationCodeE = '/VerificationCodeE';
   static const Resetpassword = '/Resetpassword';
+  static const CartScreen = '/CartScreen';
+  static const Checkout = '/Checkout';
+  static const Oopsnotfound = '/Oopsnotfound';
 }
