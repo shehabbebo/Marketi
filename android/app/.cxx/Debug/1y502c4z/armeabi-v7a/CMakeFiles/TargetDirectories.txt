@@ -1,0 +1,2 @@
+F:/marketi/marketi/android/app/.cxx/Debug/1y502c4z/armeabi-v7a/CMakeFiles/edit_cache.dir
+F:/marketi/marketi/android/app/.cxx/Debug/1y502c4z/armeabi-v7a/CMakeFiles/rebuild_cache.dir

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:marketi/core/constant/colors.dart';
 
 class ArrowBack extends StatelessWidget {
   const ArrowBack({super.key});
