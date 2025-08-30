@@ -3,17 +3,13 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:marketi/core/constant/colors.dart';
-import 'package:marketi/core/constant/constant.dart';
 import 'package:marketi/core/constant/string.dart';
 import 'package:marketi/core/di/dependency_injection.dart';
 import 'package:marketi/core/helper/cache_helper.dart';
 import 'package:marketi/core/routing/router.dart';
-import 'package:marketi/features/auth/login/view/screen/login_screen.dart';
 import 'package:marketi/features/auth/login/view_model/Auth_cubit/auth_cubit.dart';
-import 'package:marketi/features/auth/login/view_model/cubit/google_cubit.dart';
 import 'package:marketi/features/auth/login/view_model/cubit/login_cubit.dart';
 import 'package:marketi/features/auth/otp/view_model/cubit/forgot_cubit.dart';
 import 'package:marketi/features/auth/otp/view_model/cubit/new_password_cubit.dart';

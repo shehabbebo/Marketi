@@ -1,10 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 part of 'categories_request_body.dart';
-
-// **************************************************************************
-// JsonSerializableGenerator
-// **************************************************************************
 
 CategoriesRequestBody _$CategoriesRequestBodyFromJson(
         Map<String, dynamic> json) =>

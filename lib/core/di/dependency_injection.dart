@@ -2,10 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:marketi/core/network/api_service.dart';
 import 'package:marketi/core/network/dio_factory.dart';
-import 'package:marketi/features/auth/login/data/repo/google_repo.dart';
 import 'package:marketi/features/auth/login/data/repo/login_repo.dart';
-
-import 'package:marketi/features/auth/login/view_model/cubit/google_cubit.dart';
 import 'package:marketi/features/auth/login/view_model/cubit/login_cubit.dart';
 import 'package:marketi/features/auth/otp/data/repo/forgot_repo.dart';
 import 'package:marketi/features/auth/otp/data/repo/new_password_repo.dart';

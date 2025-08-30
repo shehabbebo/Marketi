@@ -1,10 +1,4 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 part of 'popular_request_body.dart';
-
-// **************************************************************************
-// JsonSerializableGenerator
-// **************************************************************************
 
 PopularRequestBody _$PopularRequestBodyFromJson(Map<String, dynamic> json) =>
     PopularRequestBody(

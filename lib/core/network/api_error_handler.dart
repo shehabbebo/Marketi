@@ -21,14 +21,14 @@ enum DataSource {
 }
 
 class ResponseCode {
-  static const int SUCCESS = 200; // success with data
-  static const int NO_CONTENT = 201; // success with no data (no content)
-  static const int BAD_REQUEST = 400; // failure, API rejected request
-  static const int UNAUTORISED = 401; // failure, user is not authorised
-  static const int FORBIDDEN = 403; //  failure, API rejected request
-  static const int INTERNAL_SERVER_ERROR = 500; // failure, crash in server side
-  static const int NOT_FOUND = 404; // failure, not found
-  static const int API_LOGIC_ERROR = 422; // API , lOGIC ERROR
+  static const int SUCCESS = 200;
+  static const int NO_CONTENT = 201;
+  static const int BAD_REQUEST = 400;
+  static const int UNAUTORISED = 401;
+  static const int FORBIDDEN = 403;
+  static const int INTERNAL_SERVER_ERROR = 500;
+  static const int NOT_FOUND = 404;
+  static const int API_LOGIC_ERROR = 422;
 
   // local status code
   static const int CONNECT_TIMEOUT = -1;
@@ -41,20 +41,13 @@ class ResponseCode {
 }
 
 class ResponseMessage {
-  static const String NO_CONTENT =
-      ApiErrors.noContent; // success with no data (no content)
-  static const String BAD_REQUEST =
-      ApiErrors.badRequestError; // failure, API rejected request
-  static const String UNAUTORISED =
-      ApiErrors.unauthorizedError; // failure, user is not authorised
-  static const String FORBIDDEN =
-      ApiErrors.forbiddenError; //  failure, API rejected request
-  static const String INTERNAL_SERVER_ERROR =
-      ApiErrors.internalServerError; // failure, crash in server side
-  static const String NOT_FOUND =
-      ApiErrors.notFoundError; // failure, crash in server side
+  static const String NO_CONTENT = ApiErrors.noContent;
+  static const String BAD_REQUEST = ApiErrors.badRequestError;
+  static const String UNAUTORISED = ApiErrors.unauthorizedError;
+  static const String FORBIDDEN = ApiErrors.forbiddenError;
+  static const String INTERNAL_SERVER_ERROR = ApiErrors.internalServerError;
+  static const String NOT_FOUND = ApiErrors.notFoundError;
 
-  // local status code
   static String CONNECT_TIMEOUT = ApiErrors.timeoutError;
   static String CANCEL = ApiErrors.defaultError;
   static String RECIEVE_TIMEOUT = ApiErrors.timeoutError;
@@ -123,10 +116,8 @@ class ErrorHandler implements Exception {
 
   ErrorHandler.handle(dynamic error) {
     if (error is DioException) {
-      // dio error so its an error from response of the API or from dio itself
       apiErrorModel = _handleError(error);
     } else {
-      // default error
       apiErrorModel = DataSource.DEFAULT.getFailure();
     }
   }
